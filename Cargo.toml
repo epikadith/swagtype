@@ -1,0 +1,9 @@
+[workspace]
+members = ["cli", "core", "quiz-engine", "typer", "mathwiz", "sciencewiz", "customwiz"]
+resolver = "3"
+
+[workspace.dependencies]
+clap = { version = "4", features = ["derive"] }
+crossterm = "0.28"
+ratatui = "0.29"
+serde = { version = "1", features = ["derive"] }
