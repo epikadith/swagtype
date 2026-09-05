@@ -19,10 +19,16 @@ It keeps a persistent local history of your performance so you can track your pr
 Pre-compiled binaries are built automatically via GitHub Actions for Linux, macOS, and Windows.
 1. Go to the **Releases** page on the GitHub repository.
 2. Download the binary that corresponds to your operating system (`swagtype-linux-x86_64`, `swagtype-macos-x86_64`, `swagtype-macos-aarch64`, or `swagtype-windows-x86_64.exe`).
-3. Make the file executable (e.g., `chmod +x swagtype-linux-x86_64`).
-4. Move the executable to a directory in your system's `PATH` so it can be run from anywhere:
-   - **Linux/macOS**: Move it to `/usr/local/bin/` or `~/.local/bin/` (e.g., `mv swagtype-linux-x86_64 ~/.local/bin/swagtype`).
-   - **Windows**: Place `swagtype.exe` in a dedicated folder inside your user directory (e.g., `C:\Users\%USERNAME%\swagtype`) and add that folder to your system's "Environment Variables -> PATH".
+3. **Rename the file** to just `swagtype` (or `swagtype.exe` on Windows) so you don't have to type the full downloaded filename every time.
+4. **Make it executable** (Linux/macOS only): run `chmod +x swagtype` in your terminal.
+5. **Add to your system PATH** so it can be run from anywhere:
+   - **Linux/macOS**: Move the file to `/usr/local/bin/` or `~/.local/bin/` (e.g., `mv swagtype ~/.local/bin/swagtype`).
+   - **Windows**: 
+     1. Place `swagtype.exe` in a dedicated folder inside your user directory (e.g., `C:\Users\%USERNAME%\swagtype`).
+     2. Open the Start Menu, type "Environment Variables", and click "Edit the system environment variables".
+     3. Click the "Environment Variables..." button, find `Path` under User Variables, and click "Edit...".
+     4. Click "New" and paste the path to your folder (e.g., `C:\Users\YourName\swagtype`).
+     5. Click OK on all windows, then completely close and restart your command prompt or PowerShell for the changes to take effect.
 ### Compiling from Source
 
 If you have Rust and Cargo installed, you can easily compile `swagtype` from source.
