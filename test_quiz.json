@@ -1,0 +1,11 @@
+{
+  "title": "Test Custom Quiz",
+  "shuffle": true,
+  "questions": [
+    {
+      "text": "What is the capital of France?",
+      "options": ["Berlin", "London", "Paris", "Madrid"],
+      "correct_index": 2
+    }
+  ]
+}

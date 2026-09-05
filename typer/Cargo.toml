@@ -4,3 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+crossterm = { workspace = true }
+owo-colors = "4"
+core = { path = "../core" }
+rand = "0.9"

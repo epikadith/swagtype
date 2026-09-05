@@ -1,14 +1,7 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+pub mod diff;
+pub mod renderer;
+pub mod sentences;
+pub mod session;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub use diff::{compute_diff, CharStatus, DiffResult};
+pub use session::{run_typing_test, TypingConfig, TypingResult};
