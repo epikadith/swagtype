@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Use Rust 1.85.0
-      uses: dtolnay/rust-toolchain@1.85.0
+    - name: Use stable Rust
+      uses: dtolnay/rust-toolchain@stable
     - name: Build
       run: cargo build --verbose
     - name: Run tests
@@ -27,8 +27,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Use Rust 1.85.0
-        uses: dtolnay/rust-toolchain@1.85.0
+      - name: Use stable Rust
+        uses: dtolnay/rust-toolchain@stable
         with:
           components: rustfmt
       - name: Check formatting
@@ -39,8 +39,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Use Rust 1.85.0
-        uses: dtolnay/rust-toolchain@1.85.0
+      - name: Use stable Rust
+        uses: dtolnay/rust-toolchain@stable
         with:
           components: clippy
       - name: Lint

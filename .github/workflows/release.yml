@@ -28,8 +28,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Rust 1.85.0
-        uses: dtolnay/rust-toolchain@1.85.0
+      - name: Use stable Rust
+        uses: dtolnay/rust-toolchain@stable
         with:
           targets: ${{ matrix.target }}
 
