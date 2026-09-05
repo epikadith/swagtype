@@ -22,7 +22,7 @@ Pre-compiled binaries are built automatically via GitHub Actions for Linux, macO
 3. Make the file executable (e.g., `chmod +x swagtype-linux-x86_64`).
 4. Move the executable to a directory in your system's `PATH` so it can be run from anywhere:
    - **Linux/macOS**: Move it to `/usr/local/bin/` or `~/.local/bin/` (e.g., `mv swagtype-linux-x86_64 ~/.local/bin/swagtype`).
-   - **Windows**: Place `swagtype.exe` in a dedicated folder (e.g., `C:\Program Files\swagtype`) and add that folder to your system's "Environment Variables -> PATH".
+   - **Windows**: Place `swagtype.exe` in a dedicated folder inside your user directory (e.g., `C:\Users\%USERNAME%\swagtype`) and add that folder to your system's "Environment Variables -> PATH".
 ### Compiling from Source
 
 If you have Rust and Cargo installed, you can easily compile `swagtype` from source.
